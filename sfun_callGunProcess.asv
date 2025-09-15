@@ -1,0 +1,149 @@
+function sfun_callGunProcess(block)
+    setup(block);
+end
+
+% ─────────────────── SETUP ────────────────────
+function setup(block)
+    % 端口与 sfun_callBWISProcess 相同：1 输入，0 输出
+    block.NumInputPorts  = 1;
+    block.NumOutputPorts = 0;
+
+    block.InputPort(1).Dimensions        = 1;
+    block.InputPort(1).DatatypeID        = 0;   % double
+    block.InputPort(1).Complexity        = 'Real';
+    block.InputPort(1).DirectFeedthrough = true;
+
+    % 一个对话参数：电子枪工程路径（string）
+    % block.NumDialogPrms  = 1;
+
+    % Sample time
+    block.SampleTimes        = [0.5 0];         % 0.5 s 轮询
+    block.SimStateCompliance = 'DefaultSimState';
+
+    % 注册方法
+    block.RegBlockMethod('PostPropagationSetup', @PostProp);
+    block.RegBlockMethod('InitializeConditions', @InitCond);
+    block.RegBlockMethod('Outputs',              @Outputs);
+    block.RegBlockMethod('Terminate',            @Terminate);
+end
+
+% ─── PostPropagationSetup：声明 DWork ───
+function PostProp(block)
+    % 仅保存上一次输入值 prevU
+    block.NumDworks = 1;
+    block.Dwork(1).Name            = 'prevU';
+    block.Dwork(1).Dimensions      = 1;
+    block.Dwork(1).DatatypeID      = 0;
+    block.Dwork(1).Complexity      = 'Real';
+    block.Dwork(1).UsedAsDiscState = true;
+end
+
+% ─── 初始化 ───
+function InitCond(block)
+    block.Dwork(1).Data = 0;
+end
+
+% ─────────────────── Outputs ───────────────────
+function Outputs(block)
+    u     = block.InputPort(1).Data;
+    prevU = block.Dwork(1).Data;
+    
+    % ↑ 上升沿触发：当输入从非 2 变为 2 时执行
+    if u == 2 && prevU ~= 2
+        %—— 配置区：DLL 与路径 ——%
+        dllName    = 'BWIBridgeDLL';
+        dllPath    = '.\bin\BWIBridgeDLL.dll';
+        headerPath = '.\bin\BWIBridgeDLL.h'; 
+        exePath    = '.\Solver\EOS.exe';
+        projectPath = 'C:\Users\pc\Desktop\EOS_磁控注入枪-helix\电子枪1';
+        
+        %—— 加载库 ——%
+        if ~libisloaded(dllName)
+            loadlibrary(dllPath, headerPath);
+            fprintf('[GUN DLL] 库 "%s" 加载成功。\n', dllName);
+        end
+        
+        pGun = [];
+        jsonStrPtr = []; % 初始化指针变量
+        
+        try
+            % 创建电子枪处理器
+            pGun = calllib(dllName, 'CreateGunProcessor', projectPath, exePath);
+            if isempty(pGun) || (isa(pGun,'lib.pointer') && pGun.isNull)
+                error('[GUN DLL] CreateGunProcessor 失败（空指针）。');
+            end
+            fprintf('[GUN DLL] Gun 处理器已创建。\n');
+            
+            % 直接读取 Result.ini → m_vEOSGunResult
+            okRead = calllib(dllName, 'ReadGunResultIni', pGun);
+            if ~okRead
+                error('[GUN DLL] ReadGunResultIni 失败或无结果。');
+            end
+            
+            % ======================= 主要修改点 =======================
+            % 1. 一次性调用新接口获取包含所有结果的 JSON 字符串
+            jsonStrPtr = calllib(dllName, 'GetGunResultsAsJson', pGun);
+            
+            if isempty(jsonStrPtr) || (isa(jsonStrPtr,'lib.pointer') && jsonStrPtr.isNull)
+                 error('[GUN DLL] GetGunResultsAsJson 失败或返回空指针。');
+            end
+
+            % 2. 将返回的 void* 指针设置为 C 字符串类型并获取其值
+            setdatatype(jsonStrPtr, 'cstring'); % 'cstring' 会自动处理到 '\0' 结尾
+            jsonString = jsonStrPtr.Value;
+            
+            % 3. 使用 MATLAB 内置函数解析 JSON
+            resultData = jsondecode(jsonString);
+            
+            fprintf('[GUN DLL] 成功解析 %d 条键值对。\n', numel(resultData));
+
+            if ~isempty(resultData)
+                % 4. 将解析出的结构体数组直接转换为 Table
+                T = struct2table(resultData);
+                
+                % 输出成表格
+                disp(T);
+                % 可视化成 uitable
+                f = figure('Name','电子枪 Result.ini 键值', 'NumberTitle','off');
+                uitable('Parent', f, ...
+                        'Data', T{:,:}, ...
+                        'ColumnName', T.Properties.VariableNames, ...
+                        'Units','normalized', ...
+                        'Position',[0 0 1 1]);
+            else
+                fprintf('[GUN DLL] 结果为空。\n');
+            end
+            
+        catch ME
+            % 捕获到错误后，在这里打印错误信息
+            fprintf(2, '错误: %s\n', ME.message);
+            if ~isempty(ME.stack)
+                fprintf(2, '错误位置: %s, 第 %d 行\n', ME.stack(1).name, ME.stack(1).line);
+            end
+        end
+        
+        %—— 清理 ——%
+        % 1. 释放 C++ 分配的 JSON 字符串内存 (非常重要！)
+        if ~isempty(jsonStrPtr) && isa(jsonStrPtr, 'lib.pointer') && ~jsonStrPtr.isNull
+            calllib(dllName, 'FreeJsonString', jsonStrPtr);
+            fprintf('[GUN DLL] JSON 字符串内存已释放。\n');
+        end
+        
+        % 2. 删除处理器实例
+        if ~isempty(pGun) && ~(isa(pGun,'lib.pointer') && pGun.isNull)
+            calllib(dllName, 'DeleteGunProcessor', pGun);
+            fprintf('[GUN DLL] Gun 处理器已删除。\n');
+        end
+    end
+    
+    % 保存当前输入值
+    block.Dwork(1).Data = u;
+end
+
+% ─── Terminate：退出时卸载库 —──
+function Terminate(~)
+    if libisloaded('BWIBridgeDLL')
+        fprintf('[GUN DLL] 卸载 BWIBridgeDLL。\n');
+        unloadlibrary('BWIBridgeDLL');
+    end
+end
