@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eb4b1060-ad3f-459f-afdf-ee7d34f822ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../AutoCal/AutoCalListCtrl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoCal/AutoCalListCtrl.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigModelOpt/CDigDataSample.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../DigModelOpt/CDigDataSample.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigModelOpt/CDigDataSample.h" beforeDir="false" afterPath="$PROJECT_DIR$/../DigModelOpt/CDigDataSample.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigModelOpt/CDlgOptim.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../DigModelOpt/CDlgOptim.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigModelOpt/DigModelOpt.aps" beforeDir="false" afterPath="$PROJECT_DIR$/../DigModelOpt/DigModelOpt.aps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigModelOpt/OptParam.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DigModelOpt/OptParam.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigModelOpt/TuneParam.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DigModelOpt/TuneParam.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OptNewXml/OptDataSampling.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OptNewXml/OptDataSampling.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SimulateAndAlgorithmDll/EOSAll.h" beforeDir="false" afterPath="$PROJECT_DIR$/../SimulateAndAlgorithmDll/EOSAll.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/CDigDataSample.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/CDigDataSample.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/CDigModelTrain.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/CDigModelTrain.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/CDigOptimize.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/CDigOptimize.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/CDigTune.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/CDigTune.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.log" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.pch" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.pch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/DigModelOpt.write.1u.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/DigModelOpt.write.1u.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/link.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/rc.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOpt.tlog/rc.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOptDlg.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/DigModelOptDlg.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/UtilsFunction.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/UtilsFunction.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/pch.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/pch.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/tinyxml2.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/tinyxml2.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/vc142.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/vc142.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/vc142.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../build/NT_VC16_64_DLLD/DigModelOpt/vc142.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pyCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../setup_debugTzVS2022.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../setup_debugTzVS2022.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../新文件 1.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2ilEMV0AjltviTUCQuUzUi9ZDxZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.XGBoost">
+    <configuration name="CNN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pyCode" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CNN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN/CNN.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CNN_XGBoost" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pyCode" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CNN_xgboost" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CNN_xgboost/CNN_XGBoost.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="XGBoost" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pyCode" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Regression" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Regression/XGBoost.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="XGBoosttest.pyx" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pyCode" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Regression/pyx" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Regression/pyx/XGBoosttest.pyx" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="load_model_predict" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pyCode" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Regression" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Regression/load_model_predict.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.XGBoost" />
+        <item itemvalue="Python.CNN_XGBoost" />
+        <item itemvalue="Python.CNN" />
+        <item itemvalue="Python.load_model_predict" />
+        <item itemvalue="Python.XGBoosttest.pyx" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23339.19" />
+        <option value="bundled-python-sdk-0029f7779945-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23339.19" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb4b1060-ad3f-459f-afdf-ee7d34f822ad" name="Default Changelist" comment="" />
+      <created>1720056715982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720056715982</updated>
+      <workItem from="1720056717484" duration="676000" />
+      <workItem from="1720444162323" duration="609000" />
+      <workItem from="1720599906707" duration="289000" />
+      <workItem from="1721651385700" duration="161000" />
+      <workItem from="1722569478629" duration="9487000" />
+      <workItem from="1723029399246" duration="504000" />
+      <workItem from="1725971888662" duration="452000" />
+      <workItem from="1729150295048" duration="58000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/XGBoost_py$CNN_XGBoost.coverage" NAME="CNN_XGBoost 覆盖结果" MODIFIED="1722587746678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CNN_xgboost" />
+    <SUITE FILE_PATH="coverage/XGBoost_py$XGBoost.coverage" NAME="XGBoost 覆盖结果" MODIFIED="1723029875568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Regression" />
+    <SUITE FILE_PATH="coverage/pyCode$XGBoost.coverage" NAME="XGBoost Coverage Results" MODIFIED="1720599924319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Regression" />
+    <SUITE FILE_PATH="coverage/XGBoost_py$load_model_predict.coverage" NAME="load_model_predict 覆盖结果" MODIFIED="1722579677926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Regression" />
+    <SUITE FILE_PATH="coverage/XGBoost_py$CNN.coverage" NAME="CNN 覆盖结果" MODIFIED="1722587414755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CNN" />
+    <SUITE FILE_PATH="coverage/XGBoost_py$XGBoosttest_pyx.coverage" NAME="XGBoosttest.pyx 覆盖结果" MODIFIED="1722571136780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Regression/pyx" />
+  </component>
+</project>
